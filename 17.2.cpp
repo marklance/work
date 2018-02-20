@@ -2,7 +2,7 @@
 #include <fstream>
 #include <cstring>
 #include <cstdlib>
-const char * file = "guests.txt";
+const char * file = "17.2.txt";
 int main()
 {
 	using namespace std;
@@ -22,11 +22,11 @@ int main()
 		cerr << "Can't open " << file << " file for utput.\n";
 		exit(EXIT_FAILURE);
 	}
-	cout << "Enter guest names (enter a blank line to quit):\n";
-	string name;
-	while (getline(cin,name) && name.size() > 0)
+	cout << "Enter what you think to save (enter a blank line to quit):\n";
+	string thing;
+	while (getline(cin,thing) && thing.size() > 0)
 	{
-		fout << name << endl;
+		fout << thing << endl;
 	}
 	fout.close();
 	fin.clear();
@@ -41,7 +41,5 @@ int main()
 	cout << "Done.\n";
 	return 0;
 }
-
-
 
 
