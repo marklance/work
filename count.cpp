@@ -17,7 +17,7 @@ int main(int argc, char * argv[])
 	for (int file = 1; file < argc; file++)
 	{
 		fin.open(argv[file]);
-		if (!fin.is_open());
+		if (!fin.is_open())
 		{
 			cerr << "Could not open " << argv[file] << endl;
 			fin.clear();
