@@ -4,15 +4,15 @@ int main()
 {
 	using namespace std;
 	char mmm[15] = "minimum";
-	char *wail = "ululate";
-	unsigned int ms = c_in_str(mmm, 'm');
+        const char * wail = (char*) "ululate";//【C/C++】warning: ISO C++ forbids converting a string constant to 'char*'  char *wail = "ululate";会出错 
+  	unsigned int ms = c_in_str(mmm, 'm');
 	unsigned int us = c_in_str(wail, 'u');
 	cout << ms << " m characters in " << mmm << endl;
 	cout << us << " u characters in " << wail << endl;
 	return 0;
 }
 
-unsigned int c_int_str(const char * str, char ch)
+unsigned int c_in_str(const char * str, char ch)
 {
 	unsigned int count = 0;
 	while (*str) 
