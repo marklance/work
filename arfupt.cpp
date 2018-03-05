@@ -20,7 +20,14 @@ int main()
 	cout << "\nUsing an array of pointer to a function:\n";
 	cout << "Adress  Value\n";
 	for (int i = 0; i < 3; i++)
-		cout << pb[i](av,3) << ": " << endl;
+		cout << pa[i](av,3) << ": " << *pa[i] (av,3) << endl;
+
+	cout << "\nUsing a pointer to a pointer to a function:\n";
+	cout << "Adress  Value\n";
+	for (int i = 0; i < 3; i++)
+		cout << pb[i](av,3) << ": " << *pb[i] (av,3) << endl;
+
+
 	cout << "\nUsing pointers to an array of pointers:\n";
 	cout << "Address  Value\n";
 	auto pc = &pa;
