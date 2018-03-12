@@ -8,8 +8,7 @@ int main()
 using namespace std;
 double a, b;
 double (*pf[3])(double, double) = {add, sub, mean};
-char * op[3]; 
-op[3]= {"add", "sub", "mean"};
+char * op[3] = {"add", "sub", "mean"};
 cout << "Enter pairs of numbers (q to quit): ";
 while (cin >> a >> b)
 {
