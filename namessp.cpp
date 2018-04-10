@@ -26,15 +26,15 @@ void other(void)
 	for(i = 0; i <3; i++)
 		getDebt(zippy[i]);
 	for(i = 0; i < 3; i++)
-		shoeDebt(zippy[i]);
-	cout << "Totaldebt: $" << sumDebts(zippy, 3) <<ewndl;
+		showDebt(zippy[i]);
+	cout << "Totaldebt: $" << sumDebts(zippy, 3) << endl;
 	return;
 }
 void another(void)
 {
 	using pers::Person;
 	Person collector = { "Milo", "Rightshift" };
-	pers::showPerson(co;;ector);
+	pers::showPerson(collector);
 	std::cout << std::endl;
 }
 

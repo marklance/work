@@ -8,13 +8,13 @@ namespace pers
 	void getPerson(Person & rp)
 	{
 		cout << "Enter first name: ";
-		cout >> rp.fname;
+		cin >> rp.fname;
 		cout << "Enter last name: ";
 		cin >> rp.lname;
 	}
-	void showPerson(sonst Person & rp)
+	void showPerson(const Person & rp)
 	{
-		std::cout << rp.lname << "., " << rp.fname;
+		std::cout << rp.lname << ", " << rp.fname;
 	}
 }
 
@@ -33,10 +33,10 @@ namespace debts
 	}
 	double sumDebts(const Debt ar[], int n)
 	{
-		dounlr total = 0;
+		double total = 0;
 		for(int i = 0; i < n; i++)
 			total += ar[i].amount;
-		return 0;
+		return total;
 	}
 }
 
