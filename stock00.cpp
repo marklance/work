@@ -1,6 +1,6 @@
 #include <iostream>
-#include "stck00.h"
-void Stock::acquire(const std::string &co, long nm double pr)
+#include "stock00.h"
+void Stock::acquire(const std::string &co, long n, double pr)
 {
 	company = co;
 	if (n < 0)
@@ -34,6 +34,7 @@ void Stock::sell(long num, double price)
 	{
 		cout << "Number of shares sold can't be negative. "
 			<< "Transaction id aborted.\n";
+	}
 		else if(num > shares)
 		{
 			cout << "You can't sell more than you have! "
