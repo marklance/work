@@ -31,8 +31,24 @@ struct weapon * create()
 int main()
 {
 	struct weapon *p;
+
 	p = create();
-	printf("%d,%d", p->price,p->atk);
+	while (p!=NULL)
+	{
+
+	printf("%d,%d\n", p->price,p->atk);
+	p = p->next;
+	}
+
+	while(p!= NULL)
+	{
+		
+		free(p);
+                p = p->next;
+	}
+
+	
+
 	return 0;
 }
 
