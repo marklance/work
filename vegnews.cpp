@@ -27,7 +27,7 @@ int main()
 		StringBad knot;
 		knot = headline1;
 		cout << "kont: " << knot << endl;
-		cout << "Exiting the block.\n":
+		cout << "Exiting the block.\n";
 	}
 	cout << "End of main()\n";
 	return 0;

@@ -5,7 +5,7 @@ class StringBad
 {
 	private:
 		char * str;
-		itn len;
+		int len;
 		static int num_strings;
 	public:
 		StringBad(const char * s);
