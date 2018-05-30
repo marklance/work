@@ -1,8 +1,9 @@
-#ifndef STRING1_H_
-#define STRING1_H_
 #include <iostream>
 using std::ostream;
 using std::istream;
+
+#ifndef STRING1_H_
+#define STRING1_H_
 
 class String
 {
@@ -23,11 +24,11 @@ class String
 		char & operator [](int i);
 		const char & operator[](int i) const;
 
-		friend bool operator <(const String &st, const String &st2);
-friend bool operator >(const String &st, const String &st2);
+friend bool operator <(const String &st, const String &st2);
+friend bool operator >(const String &st1, const String &st2);
 friend bool operator ==(const String &st, const String &st2);
 friend ostream & operator << (ostream & os, const String & st);
-friend ostream & operator >> (istream & is, String & st);
+friend istream & operator >> (istream & is, String & st);
 static int HowMany();
 };
 #endif
